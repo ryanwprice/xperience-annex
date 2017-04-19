@@ -1,0 +1,125 @@
+/* CSS Document */
+/**{
+margin:0 !important;
+padding:0 !important;
+}*/
+
+
+@import(reset.css) !important;
+
+h1, #footer, .sidebar, .right, #navigation, img, h2 span, blockquote, #email, #penguin{
+display:none !important;
+}
+
+.rubric{
+  display:inline !important;
+  
+}
+
+body{
+font-family:"Times New Roman", Times, serif !important;
+text-align:left !important;
+color: #000 !important;
+text-shadow: none !important;
+}
+
+a[href^="http://"]:after, a[href^="http://"]:visited:after{
+   content: " (" attr(href) ") " !important;
+   font-size: 90% !important;
+   }
+
+
+h1, h2, h3, h4, p, a{
+  text-shadow: 0 0 0 white !important;
+  font-family: "Times New Roman", Times, serif !important;
+  color: black !important;
+  text-align: left !important;
+}
+
+h1, h2, h3, h4, p{
+  padding:0 !important;
+}
+
+h1, h2, h3, h4{
+  font-weight: bold !important;
+  text-transform:uppercase !important;
+}
+
+p{
+font-size:14pt !important;
+line-height:1.2em !important;
+text-align:justify !important;
+}
+
+h1{
+font-size:20pt !important;
+color:#000000 !important;
+}
+
+h2{
+font-size:18pt !important;
+font-weight:bold !important;
+}
+
+h3{
+font-size:16pt !important;
+font-weight:bold !important;
+}
+
+.notes{
+font-size:10pt
+color:#000000
+}
+
+
+a, code{
+color:#999999 !important;
+text-decoration:none !important;
+}
+
+ul{
+display:none !important;
+}
+
+.activity:after {
+  content: "This document is copyright of http://www.DSGN27545.info and is for the sole use of the students at Sheridan College.";
+  display: block !important;
+  font-size:10pt !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  text-align: center !important;
+/*  margin-top:1in !important;*/
+  border-top:0.1cm solid black !important;
+  border-bottom:0.1cm solid black !important;
+  padding: 0.1in !important;
+  page-break-after: always
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:Helvetica, sans-serif;
+  border:1px solid black;
+  font-size:14px;
+  line-height:22px;
+  margin-bottom:22px;
+}
+
+th, td{
+  padding:4px 10px;
+}
+
+th{
+  font-weight:bold;
+  text-align:left;
+}
+
+td:nth-child(2n){
+  width:40px;
+  text-align:right;
+}
+
+td, th{
+  border:1px solid black;
+}

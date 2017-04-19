@@ -1,0 +1,46 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <!-- <div class="sidebar-item">
+    <p>Contact Ryan at <a href="{{ site.email }}">{{ site.email }}</a></p>
+  </div> -->
+
+  <nav class="sidebar-nav">
+    <!-- <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a> -->
+
+  <p>Assignments</p>
+  {% for node in site.pages %} 
+    {% if node.url != '/' and node.categories == "assignments" %}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+    {% endif %}
+  {% endfor %}
+
+ <!--  <p>Lessons</p>
+  
+{% for node in site.pages %} 
+    {% if node.url != '/' and node.categories == "lessons" %}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+    {% endif %}
+  {% endfor %} -->
+
+  <p>Resources</p>
+
+  {% for node in site.pages %} 
+    {% if node.url != '/' and node.categories == "resources" %}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+    {% endif %}
+  {% endfor %}
+
+<!--   <a class="sidebar-nav-item" href=/resources>Extra Resources</a>
+  <a class="sidebar-nav-item" href=/resources/inspiration.html>Inspiration</a>
+ -->
+  </nav>
+  <div class="sidebar-item">
+    <p>
+      This material has been compiled for DSGN27545 — Digital Media Studio at Sheridan College.
+    </p>
+  </div>
+</div>

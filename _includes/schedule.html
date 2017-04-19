@@ -1,0 +1,21 @@
+## Schedule
+_**Please note:** This schedule may change with advance notice from your instructor._
+
+<table id="sked">
+	<thead>
+		<tr>
+			<th>Topic</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for node in site.pages %} 
+		{% if node.url != '/' and node.categories == "lessons" %}
+			<tr>
+				<td><a href="{{ node.url }}">{{ node.title }}: {{ node.module }}</a></td>
+				<td>{{node.duedate}}</td>
+			</tr>
+		{% endif %}
+	{% endfor %}
+	</tbody>	
+</table>

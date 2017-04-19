@@ -1,0 +1,28 @@
+<h2>Assignments</h2>
+
+All major assignments are to be completed for the end of class on the date assigned unless noted otherwise. Specifics for each assignment will be provided as the term progresses.
+
+<p><strong>A final grade for this course is based on the following assignments:</strong></p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Evaluation</th>
+			<th>Weight</th>
+		</tr>
+	</thead>
+
+	{% for node in site.pages %} 
+	{% if node.url != '/' and node.categories == "assignments" %}
+	<tr>
+		<td><a href="{{ node.url }}">{{ node.title }}</a> (Due Week {{ node.duedate }})</td>
+    	<td>{{node.weighting}}</td>
+    </tr>
+    {% endif %}
+	{% endfor %}
+	<tr>
+	<td>8&times; weekly in-class activities (varied dates)</td> 
+	<td>40%</td>
+	</tr>
+</table>
+
