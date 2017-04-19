@@ -15,7 +15,7 @@ All major assignments are to be completed for the end of class on the date assig
 	{% for node in site.pages %} 
 	{% if node.url != '/' and node.categories == "assignments" %}
 	<tr>
-		<td><a href="{{ node.url }}">{{ node.title }}</a> (Due Week {{ node.duedate }})</td>
+		<td><a href="{{ node.url | prepend: site.github.url }}">{{ node.title }}</a> (Due Week {{ node.duedate }})</td>
     	<td>{{node.weighting}}</td>
     </tr>
     {% endif %}
