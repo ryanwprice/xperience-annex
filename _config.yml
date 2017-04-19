@@ -4,3 +4,10 @@ url: "dsgn27545.ryanprice.net"
 email: "pricer@mcmaster.ca"
 
 office-hours: "30 minutes before class"
+
+defaults:
+  -
+    scope:
+      path: "activities" # an empty string here means all files in the project
+    values:
+      layout: "lesson"

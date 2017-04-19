@@ -4,15 +4,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     {% include head.html %}
+
     <body>
 
-    	{% include sidebar.html %}
     	<div class="wrap">
         <div id="wrapper">
         {% include header.html %}
 
-        <h1>{{ page.title }}</h1>
-        
+        <h1><span>{{ page.title }}{% if page.module %}:</span> {{ page.module }}{% endif %}</h1>
      
         {{ content }}
      

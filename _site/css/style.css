@@ -35,6 +35,10 @@ h1{
   margin:1.5em 0;
 }
 
+h1 span {
+	color: black;
+}
+
 #logo{
 	display: block;
 	max-width:50%;
@@ -166,7 +170,7 @@ table{
   width:100%;
   border-collapse:collapse;
   font-family:Helvetica, sans-serif;
-  line-height:1.4;
+  line-height:22px;
   margin:1em 0;
 }
 
@@ -175,7 +179,7 @@ table{
 }
 
 th, td{
-  padding:6px 10px;
+  padding:10px;
 }
 
 th, td[colspan="2"]{
