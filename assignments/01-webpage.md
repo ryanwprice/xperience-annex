@@ -2,7 +2,7 @@
 title: Web Page
 categories: assignments
 duedate: July 17
-weighting: 20%
+weighting: 25%
 layout: assignment
 ---
 
