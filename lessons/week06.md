@@ -2,7 +2,7 @@
 title: Week 06
 module: Colour, Images, & More!
 categories: lessons
-duedate: 06
+duedate: June 23
 weighting: 0
 layout: lesson
 ---
@@ -25,18 +25,16 @@ Upon completion of this module, students will:
 
 In Module 5 we learned how to link pages together. These pages are full of content, but have no graphic elements (other than the fonts we have chosen). Now we will learn to add audio, video, and images to our pages.
 
-## Learner Activities
+## Readings
 
-### Readings
-
-#### Required Readings
+### Required Readings
 
 - HTML & CSS by Jon Duckett, Chapter 5: Images
 - HTML & CSS by Jon Duckett, Chapter 9: Flash, Video & Audio
 - HTML & CSS by Jon Duckett, Chapter 13: Boxes
 - HTML & CSS by Jon Duckett, Chapter 16: Images
 
-#### Supplemental Readings
+### Supplemental Readings
 
 - [Choosing Images For Your Site](http://htmlandcssbook.com/extras/choosing-images-for-your-site/)
 - [Color Theory for Designers, Part 1: The Meaning of Color](http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/)
@@ -44,20 +42,10 @@ In Module 5 we learned how to link pages together. These pages are full of conte
 - [sIFR & Cufon](http://htmlandcssbook.com/extras/sifr-and-cufon/)
 - [Mozilla blocks Flash as Facebook security chief calls for its death](http://www.theverge.com/2015/7/14/8957177/mozilla-blocks-flash-as-facebook-security-chief-calls-for-its-death)
 
-### Instructor Presentation
+## Activities
 
-- _“Week Six Lecture”_ video available
-
-### Live Session
-
-TBD
-
-### Activities
-
-- Week 05 Review
-- “Optimizing Images for the Web” tutorial
-- “Flash, video & audio” tutorial
-- “Images, Video & Sound, Oh My!” activity
+- [“Optimizing Images for the Web” tutorial]({{ site.github.url }}/activities/images)
+- [“Images, Video & Sound, Oh My!” activity]({{ site.github.url }}/activities/oh-my)
 
 ## Resources
 
@@ -69,7 +57,7 @@ TBD
 
 ## Assignments / Assessments
 
-- “Save for Web” assignment
+- [“Save for Web” assignment]({{ site.github.url }}/activities/save-for-web)
 
                                                         
 

@@ -2,7 +2,7 @@
 title: Week 01
 module: Basics of HTML & CSS
 categories: lessons
-duedate: 01
+duedate: June 05
 weighting: 0
 layout: lesson
 ---
@@ -39,9 +39,8 @@ HTML (HyperText Markup Language) is the language that makes up the content on th
 
 ## Activities
 
-- [All Hail Caesar](/activities/caesar)
-- Follow along with the _“HTML & CSS Basics”_ Demo
-- Self-assessment quiz
+- [All Hail Caesar]({{ site.github.url }}/activities/caesar)
+- [HTML & CSS Basics]({{ site.github.url }}/activities/html-intro)
 
 ## Resources
 
@@ -50,7 +49,7 @@ HTML (HyperText Markup Language) is the language that makes up the content on th
 
 ## Assignments / Assessments
 
-- Greenbelt activity
+- [Greenbelt activity]({{ site.github.url }}/activities/greenbelt01)
 
 
                                                         

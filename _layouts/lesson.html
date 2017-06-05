@@ -11,14 +11,18 @@
         <div id="wrapper">
         {% include header.html %}
 
-        <h1><span>{{ page.title }}{% if page.module %}:</span> {{ page.module }}{% endif %}</h1>
+        <h1>{{ page.title }}{% if page.module %}: <span>{{ page.module }}</span> {% endif %}</h1>
      
         {{ content }}
+
+        {% if page.graded == 'y' %}
+            {% include submission.html %}
+        {% endif %}
      
-        
         </div> <!-- #wrapper -->
 
         {% include footer.html%}
         </div> <!-- .wrap -->
+
     </body>
 </html>

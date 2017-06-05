@@ -2,7 +2,7 @@
 title: Week 03
 module: Typography 2
 categories: lessons
-duedate: 02
+duedate: June 12
 weighting: 0
 layout: lesson
 ---
@@ -25,32 +25,21 @@ Upon completion of this module, students will:
 
 In Module 2 we learned how to make our type aesthetically pleasing and readable for the user. Now that we have the design skills, we have to learn the code needed to implement our designs. Styling type on the Web isn’t the same as for print, so we will need to learn about the limitations the Internet imposes on our designs.
 
-## Learner Activities
+## Readings
 
-### Readings
-
-#### Required Readings
+### Required Readings
 
 - HTML & CSS by Jon Duckett, Chapter 12: Text
 - Classes vs IDs
 
-#### Supplemental Readings
+### Supplemental Readings
 
 - [sIFR and Cufon](http://htmlandcssbook.com/extras/sifr-and-cufon/)
 
-### Instructor Presentation
+## Activities
 
-- _“Week Three Lecture”_ video available
-
-### Live Session
-
-TBD
-
-### Activities
-
-- Week 02 Review
-- Typo Tips
-- Web Fonts
+- [Typo Tips]({{ site.github.url }}/activities/typo-tips)
+- [Web Fonts]({{ site.github.url }}/activities/webfonts)
 
 ## Resources
 
@@ -58,12 +47,10 @@ TBD
 
 ## Assignments / Assessments
 
-- Greenbelt 02
+- [Greenbelt 02]({{ site.github.url }}/activities/greenbelt02)
 
 
-- [Atom Editor](http://www.atom.io)
-- [Brackets Editor](http://brackets.io)
-- [Sublime Text](http://sublimetext.com)
+
 
 
                                                         

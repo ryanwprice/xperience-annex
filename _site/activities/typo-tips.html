@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Erik Spiekermann’s Typo Tips |  Fundamentals of Web Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/lanyon.css">
+    </head>
+
+    <body>
+
+    	<div class="wrap">
+        <div id="wrapper">
+        <header>
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
+    <!-- <a href="/"><img id="logo" src="/img/logo.gif" alt="DSGN27545 logo" /></a> -->
+    <h1><a href="/">Fundamentals of Web Design</a></h1>
+     <!-- <nav role="navigation">
+      <ul>
+        <li><a href="/assignments/">Assignments</a></li>
+        <li><a href="/lessons">Lessons</a></li>
+      </ul>
+    </nav> -->
+</header>
+
+        <h1>Erik Spiekermann’s Typo Tips</h1>
+     
+        <p>Erik Spiekermann is considered a type legend. He is the author of <em>Stop Stealing Sheep</em>, a quintessential textbook on typography, founder of the <em>FontShop</em> type foundry, and a type designer of several famous typefaces, to boot. Given Spiekermann’s type successes, it might be worth taking note of what he has to say. For this exercise we will be applying CSS code to make his <em>Typo Tips</em> more aesthetically pleasing.</p>
+
+<p>To start this activity, you will need the <a href="/assets/typo-tips.zip">typo-tips.zip</a> file. Download it, unzip it, and then Manage the Site in your code editor (Atom, Dreamweaver, etc.).</p>
+
+<p>Before we start coding, you might notice that the root folder has an images and styles folder inside it, as well as an <code class="highlighter-rouge">index.html</code> file. This is the standard folder &amp; file structure for a small Web site.</p>
+
+<p>The <code class="highlighter-rouge">index.html</code> file is the “home page” and is where the actual text resides. Load that up in the browser (double-click it).</p>
+
+<p>The <em>images</em> folder would hold any images we might use for the site. The <em>styles</em> folder holds our CSS. If you look inside that folder, you will will see a <code class="highlighter-rouge">style.css</code> file. This is the file we will add all of our code to for this exercise.</p>
+
+<h2 id="a-little-goes-a-long-way">A little goes a long way</h2>
+
+<p>The HTML file already has a div with the id of <code class="highlighter-rouge">#wrapper</code> in place. Let’s start by setting a width and making the line-length (AKA the measure) of our text more readable by adding the following code to our CSS file.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#wrapper{
+  width:600px;
+  margin: 0 auto;
+}
+</code></pre>
+</div>
+
+<p>Next we want to select a typeface by adding a font-family to our code. We could apply the same font stack to each element on the page (<code class="highlighter-rouge">h1</code>, <code class="highlighter-rouge">h2</code>, <code class="highlighter-rouge">p</code>, etc.) or we could use the power of the <em>Cascading</em> Style Sheet and apply our fonts to the body and have everything nested within the body inherit those fonts.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>body{
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+</code></pre>
+</div>
+
+<p>Remember to put the quotes around any fonts that are more than one word; I’m lookin’ at you, Times New Roman!</p>
+
+<p>Next, we will create some contrast between our paragraphs and headings, to help improve the hierarchy with visual cues.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>h1, h2, h3{
+  font-family: Helvetica, Arial, sans-serif;
+}
+</code></pre>
+</div>
+
+<p>Make sure you always finish a font stack with a generic font type like <code class="highlighter-rouge">sans-serif</code>, <code class="highlighter-rouge">serif</code>, <code class="highlighter-rouge">script</code>, etc.</p>
+
+<p>To save time and space, we can apply the font-family to the <code class="highlighter-rouge">h1</code>, <code class="highlighter-rouge">h2</code>, and <code class="highlighter-rouge">h3</code>, simply by putting commas between them.</p>
+
+<p>Next, we will add some size/scale to our headings to refine our hierarchy a little further. We’ll also apply some margins (invisible gutters) around our text.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>h1{
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+h2{
+  font-size:28px;
+}
+
+h3{
+  font-size:24px;
+  margin:36px 0 0 0;
+}
+</code></pre>
+</div>
+
+<p>Margins work just like a clock — our margins starts at 12 o’clock and move clockwise — Top, Right, Bottom, Left.</p>
+
+<p>Now let’s tweak the paragraphs.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>p{
+  font-size: 16px;
+  margin:18px 0;
+  line-height: 22px;
+}
+</code></pre>
+</div>
+
+<p>Line-height is like the baseline in InDesign, but instead of sitting at the bottom (or the baseline) of the text, it calculates the distance between lines of text from their centres.</p>
+
+<h2 id="fine-tuning-the-fonts">Fine-tuning the fonts</h2>
+
+<p>A few more lines of CSS to fine-tune our type (and give us the chance to try out a whack of other css properties).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>h1{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h2{
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h3{
+  text-transform: capitalize;
+}
+
+p{
+  text-indent: 15px;
+}
+</code></pre>
+</div>
+
+<p>Now we’ll add some colour to the text. Make sure you apply this code inside your existing elements, rather than simply cutting and pasting from below.</p>
+
+<h3 id="its-all-in-the-details">It’s all in the details</h3>
+
+<p>All of the colours are hexidecimal representations of Crayola colours. Check out the linked site, if you’d like to check out the <a href="http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts">Crayola colour codes</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>h1{
+  color: #FF496C;
+}
+
+h2{
+  color: #EF98AA;
+}
+
+h3{
+  color: #FC2847;
+}
+</code></pre>
+</div>
+
+<p>If the colours aren’t working for you, go back to your CSS code and make sure you used the correct spelling: “color” not “colo<strong>u</strong>r”.</p>
+
+<p>Finally, let’s add some minor details to really perfect our design.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.no-indent{
+  text-indent: 0;
+}
+
+a{
+  color: #EE204D;
+  text-decoration: none;
+}
+</code></pre>
+</div>
+
+<p>The above code took the underline off of our links, added small-caps to any tag with the class of <code class="highlighter-rouge">.credits</code>, and removed indentation from any tag with a class of <code class="highlighter-rouge">.no-indent</code></p>
+
+<p>There’s one final step, and it is the most important: Save your work!</p>
+
+
+        
+     
+        </div> <!-- #wrapper -->
+
+        <footer>
+<p> Contact Ryan at <a href="pricer@mcmaster.ca">pricer@mcmaster.ca</a></p>
+  <p>This material has been compiled for Xperience Annex at McMaster University.</p>
+</footer>
+        </div> <!-- .wrap -->
+
+    </body>
+</html>

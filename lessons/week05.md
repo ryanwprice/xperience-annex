@@ -2,7 +2,7 @@
 title: Week 05
 module: Files & Links
 categories: lessons
-duedate: 05
+duedate: June 19
 weighting: 0
 layout: lesson
 ---
@@ -26,32 +26,21 @@ Upon completion of this module, students will:
 
 In Module 3 we learned how to really take control of our text. Now that we style all of regular text, we need to learn about specific types of content like lists and tables. Tables and lists have their own unique markup, as well as their own specific styles.
 
-## Learner Activities
+## Readings
 
-### Readings
-
-#### Required Readings
+### Required Readings
 
 - HTML & CSS by Jon Duckett, Chapter 4: Links
 
-#### Supplemental Readings
+### Supplemental Readings
 
 - [Don’t use “click here” as link text](http://www.w3.org/QA/Tips/noClickHere)
--[HTML Links](https://docs.webplatform.org/wiki/guides/html_links)
+- [HTML Links](https://docs.webplatform.org/wiki/guides/html_links)
 
-### Instructor Presentation
+## Activities
 
-- _“Week Five Lecture”_ video available
-
-### Live Session
-
-TBD
-
-### Activities
-
-- “What’s in a Link?” Discussion
-- “Links warmup” activity
-- Links tutorial
+- [“What’s in a Link?”]({{ site.github.url }}/activities/links-activity)
+- [Links tutorial]({{ site.github.url }}/activities/links-followup)
 
 ## Resources
 
@@ -60,7 +49,7 @@ TBD
 
 ## Assignments / Assessments
 
-- Links assignment
+- [Links assignment]({{ site.github.url }}/activities/links)
 
                                                         
 

@@ -2,7 +2,7 @@
 title: Week 07
 module: Page Layout 1
 categories: lessons
-duedate: 07
+duedate: June 26
 weighting: 0
 layout: lesson
 ---
@@ -28,33 +28,22 @@ Upon completion of this module, students will:
 
 In Module 6 we learned how to add polish off the design of our content, now we need a way to format it into a design, complete with a layout. This module will focus on the elements required to position and align our elements on the screen.
 
-## Learner Activities
+## Readings
 
-### Readings
-
-#### Required Readings
+### Required Readings
 
 - HTML & CSS by Jon Duckett, Chapter 13: Boxes
 - HTML & CSS by Jon Duckett, Chapter 15: Layout
 
-#### Supplemental Readings
+### Supplemental Readings
 
 - [All About Floats](https://css-tricks.com/all-about-floats/)
 - [HTML Dog: Page Layout](http://www.htmldog.com/guides/css/intermediate/layout/)
 
-### Instructor Presentation
+## Activities
 
-- _“Week Seven Lecture”_ video available
-
-### Live Session
-
-TBD
-
-### Activities
-
-- Week 06 Review
-- “Layout Concepts” tutorial
-- “Layout In Practice” tutorial
+- [“Layout Concepts” tutorial]({{ site.github.url }}/activities/layout-concepts)
+- [“Layout In Practice” tutorial]({{ site.github.url }}/activities/layout-practice)
 
 ## Resources
 
@@ -63,6 +52,6 @@ TBD
 
 ## Assignments / Assessments
 
-- “Page layout” assignment
+- [“Page layout” assignment]({{ site.github.url }}/activities/page-layout)
                                                         
 

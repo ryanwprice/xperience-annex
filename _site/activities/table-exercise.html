@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Tables Exercise |  Fundamentals of Web Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/lanyon.css">
+    </head>
+
+    <body>
+
+    	<div class="wrap">
+        <div id="wrapper">
+        <header>
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
+    <!-- <a href="/"><img id="logo" src="/img/logo.gif" alt="DSGN27545 logo" /></a> -->
+    <h1><a href="/">Fundamentals of Web Design</a></h1>
+     <!-- <nav role="navigation">
+      <ul>
+        <li><a href="/assignments/">Assignments</a></li>
+        <li><a href="/lessons">Lessons</a></li>
+      </ul>
+    </nav> -->
+</header>
+
+        <h1>Tables Exercise</h1>
+     
+        <p>Before we start, we need to setup a new site. Download the
+<a href="/assets/generic-site-template.zip">generic-site-template.zip</a> for all
+the necessary files &amp; folders.</p>
+
+<p>Let’s start by building a simple table with 3 bands and 3 albums.</p>
+
+<p>The table will have three rows, known as <code class="highlighter-rouge">&lt;tr&gt;</code>s, and each row will have
+2 columns, known as <code class="highlighter-rouge">&lt;td&gt;</code>s</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Nirvana&lt;/td&gt;
+        &lt;td&gt;In Utero&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Adele&lt;/td&gt;
+        &lt;td&gt;21&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Pink Floyd&lt;/td&gt;
+        &lt;td&gt;The Wall&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+</div>
+
+<h2 id="lets-complicate-matters">Let’s complicate matters</h2>
+
+<p>Now that we have a simple table, we can add a header to our table to
+give our columns titles.</p>
+
+<p>We will simply add another table row with 2 <code class="highlighter-rouge">&lt;th&gt;</code>s instead of <code class="highlighter-rouge">&lt;td&gt;</code>s</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Band&lt;/th&gt;
+        &lt;th&gt;Album&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Nirvana&lt;/td&gt;
+        &lt;td&gt;In Utero&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Adele&lt;/td&gt;
+        &lt;td&gt;21&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Pink Floyd&lt;/td&gt;
+        &lt;td&gt;The Wall&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+</div>
+
+<h2 id="just-a-little-more-markup">Just a little more markup</h2>
+
+<p>Our code works, but we still need to add our sections to divide the head
+and the body. We need to nest our header and body in <code class="highlighter-rouge">&lt;thead&gt;</code> and
+<code class="highlighter-rouge">&lt;tbody&gt;</code>, respectively.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Band&lt;/th&gt;
+            &lt;th&gt;Album&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Nirvana&lt;/td&gt;
+            &lt;td&gt;In Utero&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Adele&lt;/td&gt;
+            &lt;td&gt;21&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Pink Floyd&lt;/td&gt;
+            &lt;td&gt;The Wall&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+</div>
+
+<h2 id="just-for-kicks">Just for kicks!</h2>
+
+<p>Now that our table has content, titles for the columns, we can go and
+add a footer. The <code class="highlighter-rouge">tfoot</code> will just have some extra info about our
+musical choices, so it can occupy both columns by using a <code class="highlighter-rouge">colspan</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Band&lt;/th&gt;
+            &lt;th&gt;Album&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Nirvana&lt;/td&gt;
+            &lt;td&gt;In Utero&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Adele&lt;/td&gt;
+            &lt;td&gt;21&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Pink Floyd&lt;/td&gt;
+            &lt;td&gt;The Wall&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan=2&gt;Albums selected at random&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+</div>
+
+<h2 id="style-it-up">Style it up!</h2>
+
+<p>We have a table, albeit an ugly one. We can add some style to our css
+file.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>table{
+    border-collapse: collapse;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 4px;
+}   
+</code></pre>
+</div>
+
+<p>Try the CSS without the <code class="highlighter-rouge">border-collapse</code> and see how you get odd little
+margins between each cell.</p>
+
+<p>Now let’s style the header…</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>th{
+    background-color: #333;
+    color: white;
+    font-weight:bold;
+    text-align: left;
+}
+</code></pre>
+</div>
+
+<p>The header, by default is centred, so we need to align it left.</p>
+
+<p>Now we can set the size of our table</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>table{
+    border-collapse: collapse;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 400px;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 4px;
+    width: 50%;
+    height: 60px;
+    vertical-align: center;
+}
+</code></pre>
+</div>
+
+<p>By default, most browsers set the vertical alignment to center, but we
+want to ensure the design looks right.</p>
+
+<p>Last, but not least, we can throw some style at our footer.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tfoot{
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+</code></pre>
+</div>
+
+<h2 id="extra-extra">Extra! Extra!</h2>
+
+<p>If our list was longer, we might decide to add alternating stripes to
+our rows to make the list easier to read. We could apply a class to
+every odd row with a name like “odd”. Our code would look something like
+this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Band&lt;/th&gt;
+            &lt;th&gt;Album&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr class="odd"&gt;
+            &lt;td&gt;Nirvana&lt;/td&gt;
+            &lt;td&gt;In Utero&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Adele&lt;/td&gt;
+            &lt;td&gt;21&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class="odd"&gt;
+            &lt;td&gt;Pink Floyd&lt;/td&gt;
+            &lt;td&gt;The Wall&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan=2&gt;Albums selected at random&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+</div>
+
+<p>Remember, we can use a class as many times as we like.</p>
+
+<p>Now we can create some CSS for it.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.odd{
+    background-color:#DDD;
+}
+</code></pre>
+</div>
+
+<p>These alternating bars of colour are often referred to as “zebra
+stripes”</p>
+
+
+        
+     
+        </div> <!-- #wrapper -->
+
+        <footer>
+<p> Contact Ryan at <a href="pricer@mcmaster.ca">pricer@mcmaster.ca</a></p>
+  <p>This material has been compiled for Xperience Annex at McMaster University.</p>
+</footer>
+        </div> <!-- .wrap -->
+
+    </body>
+</html>

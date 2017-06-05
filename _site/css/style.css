@@ -148,7 +148,10 @@ img{
 	max-width:100%;
 	display: block;
 	margin:0 auto;
-	/*border:2px solid #333;*/
+	border:2px solid #666;
+	box-shadow: 4px 4px 4px #ccc;
+	box-sizing: border-box;
+	padding: 10px;
 }
 
 .caption img{
@@ -312,8 +315,38 @@ footer a, footer a:hover{
 	background-color:#eee;
 }
 
+/*// code highlights
+*/
 
+pre{
+  background-color: #eee;
+  padding: 10px 20px;
+  margin: 0 0 20px 0;
+  /*border: 1px solid #d71920;*/
+  border-radius: 10px;
+}
 
+code{
+    color: #666;
+    font-family: Courier, "Courier New", "Lucida Console", sans-serif;
+		line-height:1.2;
+}
+
+pre code{
+  width: 100%;
+  display: block;
+  overflow: auto;
+  color: #333;
+}
+
+pre code strong{
+	color:#d71920;
+}
+
+pre code span{
+  font-weight: bold;
+
+}
 
 
 

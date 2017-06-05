@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Layout Concepts |  Fundamentals of Web Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/lanyon.css">
+    </head>
+
+    <body>
+
+    	<div class="wrap">
+        <div id="wrapper">
+        <header>
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
+    <!-- <a href="/"><img id="logo" src="/img/logo.gif" alt="DSGN27545 logo" /></a> -->
+    <h1><a href="/">Fundamentals of Web Design</a></h1>
+     <!-- <nav role="navigation">
+      <ul>
+        <li><a href="/assignments/">Assignments</a></li>
+        <li><a href="/lessons">Lessons</a></li>
+      </ul>
+    </nav> -->
+</header>
+
+        <h1>Layout Concepts</h1>
+     
+        <p>There are all kinds of tools at our disposal to take our headings,
+images, and text and fit them on the page, just the same way we can in
+print layout programs like InDesign.</p>
+
+<h2 id="to-the-left">To the left</h2>
+
+<p>To start, download the <a href="/assets/layout-concepts.zip">layout-concepts.zip</a>
+file and manage the site in Dreamweaver.</p>
+
+<p>There are six mini activities to work through.</p>
+
+<h2 id="boxes">01 — Boxes</h2>
+
+<p>Width and Height can be applied to elements as px or percentages. We can
+style the .box div with a pixel-width and height, and we can use
+percentages for the paragraphs.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.box{
+  height:300px;
+  width: 300px;
+  background-color:red;
+}
+
+p.one, .two{
+  height: 75%;
+  width: 75%;
+  background-color: yellow;
+  margin:0; 
+}
+</code></pre>
+</div>
+
+<p><img src="/images/concepts-box01.jpg" alt="" /></p>
+
+<p>Notice how the text in the second paragraph takes up more space then the
+size of the box we created?</p>
+
+<p>With a little bit of CSS, we can fix that.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.two{
+  overflow:hidden;
+}
+
+.two{
+  overflow:scroll;
+}
+</code></pre>
+</div>
+
+<p><a href="images/concepts-box02.jpg"><img src="/images/concepts-box02.jpg" alt="" /></a></p>
+
+<p>Left: <code class="highlighter-rouge">overflow:hidden</code>, Right: <code class="highlighter-rouge">overflow:scroll</code></p>
+
+<h2 id="borders">02 — Borders</h2>
+
+<p>We’ve looked at borders before, so we won’t get caught up here. Here’s
+some code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>p{
+  padding:10px;
+  border: 2px solid red;
+  border: 2px dashed green;
+  border-left: 4px dotted blue;
+  border-bottom:10px solid black;
+}
+</code></pre>
+</div>
+
+<p>And here is the output in the browser.</p>
+
+<p><a href="images/concepts-borders.jpg"><img src="/images/concepts-borders.jpg" alt="" /></a></p>
+
+<p>We can change the style of the border (dotted, dashed, etc.), the
+colour, and we can even target just one side at a time if we wanna get
+real fancy!</p>
+
+<h3 id="inline-vs-block">03 — Inline vs Block</h3>
+
+<p>Some elements will always appear to continue on the same line as their
+neighbouring elements. These are inline.</p>
+
+<p>Typically, inline elements sit inside a block element (ex: <code class="highlighter-rouge">&lt;strong&gt;</code>,
+<code class="highlighter-rouge">&lt;em&gt;</code>, <code class="highlighter-rouge">&lt;a&gt;</code>, etc. are part of a <code class="highlighter-rouge">&lt;p&gt;</code></p>
+
+<h3 id="html">HTML</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;a href="#"&gt;link one&lt;/a&gt;
+&lt;a href="#"&gt;link two&lt;/a&gt;
+&lt;a href="#"&gt;link three&lt;/a&gt;
+</code></pre>
+</div>
+
+<h3 id="browser">Browser</h3>
+
+<p><img src="/images/concepts-inline.jpg" alt="" /></p>
+
+<p>The code above displays like this in the browser.</p>
+
+<p>Some elements will always appear to start on a new line in the browser.
+These are block elements. ex: <code class="highlighter-rouge">&lt;p&gt; &lt;h1&gt; &lt;ul&gt; &lt;li&gt;</code> etc.</p>
+
+<h3 id="html-1">HTML</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;p&gt;One&lt;/p&gt;
+&lt;p&gt;Two&lt;/p&gt;
+&lt;p&gt;Three&lt;/p&gt;
+</code></pre>
+</div>
+
+<h3 id="browser-1">Browser</h3>
+
+<p><img src="/images/concepts-block.jpg" alt="" /></p>
+
+<p>The code above displays like this in the browser.</p>
+
+<p>With the Box Model, we can add a border, padding, margins, even width
+and height to an element. As we add these elements, the actual size of
+the element grows in the browser. The element is the sum of all of it’s
+parts</p>
+
+<h3 id="html-2">HTML</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;p class="box"&gt;One&lt;/p&gt;
+&lt;p class="box"&gt;Two&lt;/p&gt;
+&lt;p class="box"&gt;Three&lt;/p&gt;
+</code></pre>
+</div>
+
+<h4 id="css">CSS</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.box{
+  border:1px solid red;
+  width:100px;
+  padding:10px;
+  margin:20px;
+  background-color: #ccc;
+  float: left;
+}
+</code></pre>
+</div>
+
+<h3 id="browser-2">Browser</h3>
+
+<p><img src="/images/concepts-boxmodel.jpg" alt="" /></p>
+
+<p>Each paragraph occupies 166px of width (margin left &amp; right, padding
+left &amp; right, border left &amp; right, and width).</p>
+
+<p>Need a little more info on the Box Model? Try the <a href="boxmodel.html">Box
+Model</a> activity from week four.</p>
+
+<h3 id="floats">04 — Floats</h3>
+
+<p>Floats let us do just as the suggest, float items left and right.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>p{
+  width:180px;
+  float: left;
+  margin:10px;
+  background-color: yellow;
+}
+</code></pre>
+</div>
+
+<p><a href="/images/concepts-floats.jpg"><img src="/images/concepts-floats.jpg" alt="" /></a></p>
+
+<p>The <code class="highlighter-rouge">float</code> property allows our 180-pixel-wide paragraphs to float to
+the left of the one before. Try resizing the browser; as it gets
+smaller, the paragraphs will fall under each other when there is no
+space for them to float left.</p>
+
+<p>The <code class="highlighter-rouge">margin</code> puts space between each paragraph/column. Try taking it out
+and see what happens when you refresh.</p>
+
+<p>A <code class="highlighter-rouge">background-color</code> has been added to make things easier to see.</p>
+
+<h2 id="image-floats">05 — Image floats</h2>
+
+<p>Start by inserting an image inside the start of the first paragraph.
+Images are inline elements, so they fit nicely in paragraphs, which are
+block elements.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;p&gt;&lt;img src="images/starfish.jpg"/&gt;Lorem ipsum dolor...
+</code></pre>
+</div>
+
+<p>If we add in some CSS, we can see how the image floats within the text.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>img{
+  float: left;
+  padding: 4px;
+  border: 1px solid red;
+  margin:0 10px 10px 0;
+}
+</code></pre>
+</div>
+
+<p>Try resizing the browser and see how the text wraps around the image,
+just like a text wrap in InDesign.</p>
+
+<p><a href="/images/concepts-images01.jpg"><img src="/images/concepts-images01.jpg" alt="" /></a></p>
+
+<p>Now try changing the <code class="highlighter-rouge">float</code> from left to right.</p>
+
+<p><a href="/images/concepts-images02.jpg"><img src="/images/concepts-images02.jpg" alt="" /></a></p>
+
+<p>Now let’s take out that img tag and move it into a <code class="highlighter-rouge">figure</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;figure&gt;
+  &lt;img src="images/starfish.jpg"/&gt;
+  &lt;figcaption&gt;This is a red starfish&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;img src="images/starfish.jpg"/&gt;Lorem ipsum dolor...
+</code></pre>
+</div>
+
+<p>Now, if we add a bit of CSS we can create an image sidebar. The <code class="highlighter-rouge">figure</code>
+tag acts like a group container for the <code class="highlighter-rouge">img</code> and <code class="highlighter-rouge">figcaption</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>figure{
+  float: right;
+  width:400px;
+}
+</code></pre>
+</div>
+
+<p><a href="/images/concepts-images03.jpg"><img src="/images/concepts-images03.jpg" alt="" /></a></p>
+
+<p>Now, let’s remove the figure all together—but with CSS!</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>figure{
+    display:none;
+}
+</code></pre>
+</div>
+
+<p>This little trick is very powerful. Anything that you remove this way
+becomes invisible to screen readers and search engines, but someone can
+still find it in the source code if they go looking. Use sparingly!</p>
+
+<p>Let’s throw three thumbnails in at top of the <code class="highlighter-rouge">body</code>, just above our
+figure.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;img src="images/thumb01.jpg" /&gt;
+&lt;img src="images/thumb02.jpg" /&gt;
+&lt;img src="images/thumb03.jpg" /&gt;
+</code></pre>
+</div>
+
+<p><a href="/images/concepts-images04.jpg"><img src="/images/concepts-images04.jpg" alt="" /></a></p>
+
+<p>Nothin’ fancy, so let’s keep going!</p>
+
+<p>With a bit of CSS code we can create a stack of images.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>img{
+  float: right;
+  margin:0 0 10px 10px;
+  clear: right;
+}
+</code></pre>
+</div>
+
+<p>We floated all images to the right, and then forced each image to clear
+any element floated to the right. To finish it off, we put 10px of
+margin on the bottom and right of each image to add a bit of breathing
+room.</p>
+
+<p><a href="/images/concepts-images05.jpg"><img src="/images/concepts-images05.jpg" alt="" /></a></p>
+
+<p>Just a tiny bit of code can go a long way!</p>
+
+<h2 id="positioning">06 — Positioning</h2>
+
+<p>Our HTML file already has some CSS in it to create four boxes, each
+100px square.</p>
+
+<p><a href="/images/concepts-positioning01.jpg"><img src="/images/concepts-positioning01.jpg" alt="" /></a></p>
+
+<p>Little boxes made of ticky-tacky.</p>
+
+<p>Up until now, everything we’ve looked at has been Relative to the item
+before and after it. Now we can position items absolutely so they sit
+exactly where we want them.</p>
+
+<p>To do that, we need to do two things: declare the items to be absolute
+and give them coordinates.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.red, .green, .blue, .black{
+  position:absolute;
+}
+
+.red{
+  top: 10px;
+  left: 10px;
+}
+
+.green{
+  top:10px;
+  right:10px;
+}
+
+.blue{
+  bottom: 10px;
+  left:10px;
+}
+
+.black{
+  top: 55px;
+  left: 55px;
+}
+</code></pre>
+</div>
+
+<p><a href="/images/concepts-positioning02.jpg"><img src="/images/concepts-positioning02.jpg" alt="" /></a></p>
+
+<p>Try resizing the browser. No matter what size the window is, the boxes
+sit exactly where we told them to.</p>
+
+<p>Using absolute positioning is <em>very powerful</em> and should be used
+sparingly. It can often times lead to more headaches than it’s worth!</p>
+
+<p>Our black square overlaps the red square, and so it should because it
+was the last thing in our HTML code to be rendered. We can fix that with
+CSS.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.red{
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+</code></pre>
+</div>
+
+<p><a href="/images/concepts-positioning03.jpg"><img src="/images/concepts-positioning03.jpg" alt="" /></a></p>
+
+<p>Just like layers in Photoshop, we can move items up and down and control
+overlap.</p>
+
+
+        
+     
+        </div> <!-- #wrapper -->
+
+        <footer>
+<p> Contact Ryan at <a href="pricer@mcmaster.ca">pricer@mcmaster.ca</a></p>
+  <p>This material has been compiled for Xperience Annex at McMaster University.</p>
+</footer>
+        </div> <!-- .wrap -->
+
+    </body>
+</html>

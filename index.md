@@ -5,7 +5,6 @@ title: Fundamentals of Web Design
 
 Instructor: Ryan Price  
 Email: [{{site.email}}](mailto:{{site.email}})  
-Office hours: {{ site.office-hours }}
 
 {% include schedule.html %}
 
@@ -49,6 +48,14 @@ This course incorporates the foundational principles of web design with experien
 
 <p>Above the Fold by Brian Miller (ISBN: 978-1440308420)</p>
 
+<h2>Software</h2>
+
+<p>A code editor of some kind is needed to make your life significantly better. Below is a list of recommended _free_ browsers</p>
+
+- [Atom Editor](http://www.atom.io)
+- [Brackets Editor](http://brackets.io)
+- [Sublime Text](http://sublimetext.com)
+
 ## Communication
 
 I can be reached at [{{ site.email }}]({{ site.email }}) and will reply within 24 hours except on the weekends. 
@@ -58,7 +65,5 @@ Emailing me the night before an assignment is due, will not likely get the desir
 If you cannot make it to class, please let me know as soon as possible so we can make arrangements to get you caught up.
 
 {% include grades.html %}
-
-
 
 {% include policies.md %}

@@ -2,7 +2,7 @@
 title: Week 11
 module: Final Project Phase 1
 categories: lessons
-duedate: 11
+duedate: July 24
 weighting: 0
 layout: lesson
 ---

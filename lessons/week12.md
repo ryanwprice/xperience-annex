@@ -2,7 +2,7 @@
 title: Week 12
 module: Final Project Phase 2
 categories: lessons
-duedate: 12
+duedate: July 28
 weighting: 0
 layout: lesson
 ---

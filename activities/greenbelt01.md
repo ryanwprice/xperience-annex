@@ -10,8 +10,8 @@ Now that you've learned the basics of HTML you will spend some time fixing it!
 
 ## What's wrong with this code?
 
-In the <a href="/assets/greenbelt-01.zip">greenbelt zip</a> file there is an HTML file for you to fix. There are several tags that are incorrect and it is your job to find them and correct them. Use the image below to see what needs fixin'.
+In the <a href="{{ site.github.url }}/assets/greenbelt01.zip">greenbelt zip</a> file there is an HTML file for you to fix. There are several tags that are incorrect and it is your job to find them and correct them. Use the image below to see what needs fixin'.
 
-[![Greenbelt mockup](/images/greenbelt01.png)](/images/greenbelt01.jpg)
+[![Greenbelt mockup]({{ site.github.url }}/images/greenbelt01.jpg)]({{ site.github.url }}/images/greenbelt01.jpg)
 
-Take advantage of the textbook, lecture slides, etc. to help you figure out what needs fixin'!
+Take advantage of the textbook, lecture notes, etc. to help you figure out what needs fixin'!

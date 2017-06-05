@@ -1,0 +1,5 @@
+/* You do not need to use the wrapper div, it is here as a jumping-off point! */
+#wrapper{
+  width: 600px; /*You can change the width to whatever suits your design*/
+  margin: 0 auto; /*This centers your wrapper container horizontally on-screen. */
+}

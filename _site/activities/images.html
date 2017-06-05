@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Optimizing Images for the Web |  Fundamentals of Web Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/lanyon.css">
+    </head>
+
+    <body>
+
+    	<div class="wrap">
+        <div id="wrapper">
+        <header>
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
+    <!-- <a href="/"><img id="logo" src="/img/logo.gif" alt="DSGN27545 logo" /></a> -->
+    <h1><a href="/">Fundamentals of Web Design</a></h1>
+     <!-- <nav role="navigation">
+      <ul>
+        <li><a href="/assignments/">Assignments</a></li>
+        <li><a href="/lessons">Lessons</a></li>
+      </ul>
+    </nav> -->
+</header>
+
+        <h1>Optimizing Images for the Web</h1>
+     
+        <p>Images need to be saved appropriately for the Web. Details such as what image format (jpg, png, gif), image size, image quality, etc. all need to be considered.</p>
+
+<h2 id="before-you-save">Before you Save</h2>
+
+<h3 id="get-prepped">Get prepped!</h3>
+
+<p>Before you can Save for Web in Photoshop, you need to get your image ready. Make sure the image is RGB and sized to be pixel-perfect. Resolution is irrelevant, we only truly care about the number of pixels!</p>
+
+<h3 id="save-it-already">Save it already!</h3>
+
+<p>Choose <code class="highlighter-rouge">File &gt; Save for Web</code> or the super-simple-and-totally-easy-to-remember shortcut <code class="highlighter-rouge">Command + Option + Shift + S</code> and switch the Original view to 2-Up or 4-Up so you can compare image format and compression options</p>
+
+<p><a href="/images/save4web01.jpg"><img src="/images/save4web01.jpg" alt="" /></a></p>
+
+<p>Select a Slice (one of the versions of your image) and apply a preset from the right side of the dialog box. Presets select a file format, compression algorithm, colors, etc. as a starting point for you to tweak and adjust.</p>
+
+<p>Try adjusting the file format, compression quality, etc. and compare against other slices until you find the best overall compromise of image quality vs file size.</p>
+
+<p><a href="/images/save4web02.jpg"><img src="/images/save4web02.jpg" alt="" /></a></p>
+
+<p>Once you’ve found the imperfect balance between size and quality, you can actually click <code class="highlighter-rouge">Save</code>. The best part about Save for Web is that you can keep your source files (PSDs, etc.) in one folder, and save them all to your Images folder and Photoshop never forgets where you want to save to!</p>
+
+<h2 id="considerations">Considerations</h2>
+
+<h3 id="embed-icc-profile">Embed ICC Profile</h3>
+
+<p>“Embedding ICC profiles shows a “true” copy of the original colors, but only in profile-aware apps like Safari and FF 3.5. … [T]his shift won’t apply to any CSS-set backgrounds or borders around the image. In a lot of cases, this doesn’t matter, but when it matters it’s a huge pain to work around. This is the main reason web designers might want to leave profiles out of images that need to match browser colors.” (source: <a href="http://www.viget.com/inspire/save-for-web-simply/">Viget Inspire</a>)</p>
+
+<p>Basically, don’t apply <code class="highlighter-rouge">Embed ICC Profiles</code> unless it is a standalone photograph. Any site elements (buttons, backgrounds, icons, etc.) should be saved with the option unchecked.</p>
+
+<h3 id="srgb">sRGB</h3>
+
+<p>The best practice is to create/edit your images for web graphics in sRGB from the get-go to avoid any nasty colour shifts if you create an image in another Colour Space, such as Adobe RGB (1998). The Adobe RGB (1998) Colour Space covers a larger amount of the colour spectrum than sRGB and is a common default for a lot of Photoshop users. To ensure you are working in the right Colour Space go to <code class="highlighter-rouge">Edit &gt; Color Settings</code> and select the <code class="highlighter-rouge">Web/Internet</code> preset. Remember to switch it back for Print editing, etc.! Worst case, your images will be edited in Adobe RGB (1998), or some other Colour Space, and converted on-the-fly by the Web browser (as virtually all browsers do this) to sRGB, potentially creating an undesirable colour shift.</p>
+
+<h4 id="mac-vs-pc">Mac vs PC</h4>
+
+<p><em>Note: This only applies to Macs using OSX 10.5 and lower.</em> Gamma settings are different for Mac ( Pre-Snow Leopard 1.8) and PC (2.2). Essentially, this means that monitor colours are darker on a PC than a Mac, and therefore all your images will be darker on a PC than how you see it on your home Mac. You can view your image on a Mac as though it were a PC. Simply go to <code class="highlighter-rouge">View &gt; Proof Setup</code> and select <code class="highlighter-rouge">Windows RGB</code>. You can toggle the preview on/off with <code class="highlighter-rouge">Command + Y</code></p>
+
+<h3 id="optimization-options">Optimization options</h3>
+
+<p>Not sure what all those setting mean? Adobe has a handy guide to help you out.</p>
+
+<ul>
+  <li><a href="http://help.adobe.com/en_US/Photoshop/11.0/WS29D0201B-A3E2-4339-9747-8FB540762EE3.html">JPEG optimization options</a></li>
+  <li><a href="http://help.adobe.com/en_US/Photoshop/11.0/WSE07483CE-5D9F-4764-AA48-9DF708AD8479.html">GIF optimization options</a></li>
+  <li><a href="http://help.adobe.com/en_US/Photoshop/11.0/WSEA01D274-9690-488f-8CF0-0133E171BD4A.html">PNG optimization options</a></li>
+</ul>
+
+
+        
+     
+        </div> <!-- #wrapper -->
+
+        <footer>
+<p> Contact Ryan at <a href="pricer@mcmaster.ca">pricer@mcmaster.ca</a></p>
+  <p>This material has been compiled for Xperience Annex at McMaster University.</p>
+</footer>
+        </div> <!-- .wrap -->
+
+    </body>
+</html>

@@ -2,7 +2,7 @@
 title: Week 10
 module: Usability & Functionality
 categories: lessons
-duedate: 10
+duedate: July 21
 weighting: 0
 layout: lesson
 ---

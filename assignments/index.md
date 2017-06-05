@@ -2,7 +2,7 @@
 layout: default
 title: Assignments
 ---
-{{ include head.html}}
+{% include head.html %}
 <ul id="listing">
 {% for node in site.pages %} 
 	{% if node.url != '/' and node.categories == "assignments" %}

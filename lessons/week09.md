@@ -2,7 +2,7 @@
 title: Week 09
 module: Elements of a Web Site
 categories: lessons
-duedate: 09
+duedate: July 17
 weighting: 0
 layout: lesson
 ---
@@ -25,29 +25,20 @@ Upon completion of this module, students will:
 
 In Module 8 we learned how to layout a Web page using a grid. This module will focus on a site’s interface and how to make a site easy-to-use and navigate for users.
 
-## Learner Activities
 
-### Readings
+## Readings
 
-#### Required Readings
+### Required Readings
 
 - HTML & CSS by Jon Duckett, Chapter 18: Process & Design
 
-#### Supplemental Readings
+### Supplemental Readings
 
 - _None._
 
-### Instructor Presentation
+## Activities
 
-- _“Week Nine Lecture”_ video available
-
-### Live Session
-
-TBD
-
-### Activities
-
-- Week 08 Review
+- _Work Period_
 
 ## Resources
 
@@ -55,6 +46,6 @@ TBD
 
 ## Assignments / Assessments
 
-- “Page layout” assignment
+- [Web Page layout assignment]({{ site.github.url }}/assignments/01-webpage)
                                                         
 

@@ -2,7 +2,7 @@
 title: Week 02
 module: Typography 1
 categories: lessons
-duedate: 02
+duedate: June 09
 weighting: 0
 layout: lesson
 ---
@@ -26,31 +26,21 @@ Upon completion of this module, students will:
 
 In Module 1 we learned how to format HTML (HyperText Markup Language) and its relationship to CSS (Cascading Style Sheets). Good code is the foundation to a good site, and good content is what attracts users to the site; they say that “Web Design is 95% typography” This module will focus on creating semantic code and applying typographic style to that content.
 
-## Learner Activities
+## Readings
 
-### Readings
-
-#### Required Readings
+### Required Readings
 
 - HTML & CSS by Jon Duckett, Chapter 12: Text
 
-#### Supplemental Readings
+### Supplemental Readings
 
 - [Web Design is 95% Typography](https://ia.net/know-how/the-web-is-all-about-typography-period)
 - [On Web Typography](http://alistapart.com/article/on-web-typography)
 
-### Instructor Presentation
 
-- _“Week Two Lecture”_ video available
+## Activities
 
-### Live Session
-
-TBD
-
-### Activities
-
-- Week 01 review
-- Type Comparison: Craigslist vs Kijiji
+- [Type Comparison: Craigslist vs Kijiji]({{ site.github.url }}/activities/type-comparison)
 - [Type connection: A typographic dating game](http://www.typeconnection.com/)
 
 ## Resources
