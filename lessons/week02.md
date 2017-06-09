@@ -5,6 +5,7 @@ categories: lessons
 duedate: June 09
 weighting: 0
 layout: lesson
+published: true
 ---
 
 ## Learning Objectives
@@ -56,8 +57,4 @@ In Module 1 we learned how to format HTML (HyperText Markup Language) and its re
 
 ## Assignments / Assessments
 
-- Discussion board questions
-
-
-                                                        
-
+- [Greenbelt activity]({{ site.github.url }}/activities/greenbelt01)
