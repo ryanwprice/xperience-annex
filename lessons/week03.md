@@ -38,6 +38,7 @@ In Module 2 we learned how to make our type aesthetically pleasing and readable 
 
 ## Activities
 
+- [Class vs ID]({{ site.github.url }}/assets/class-vs-id.pdf)
 - [Typo Tips]({{ site.github.url }}/activities/typo-tips)
 - [Web Fonts]({{ site.github.url }}/activities/webfonts)
 
