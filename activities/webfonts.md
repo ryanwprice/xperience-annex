@@ -21,7 +21,7 @@ Before you get going, don't forget to to to `Site > New Site` in Dreamweaver to 
 
 Visit the [Google web fonts](http://www.google.com/webfonts) site and select one of the 818 (at the time of writing) fonts available. Click the "+" button (top right of the font). A black box entitled "Families Selected" will appear at the bottom of the screen.
 
-![]({{ site.github.url }}/images/webfonts-step01.jpg)
+![]({{ site.github.url }}/images/webfonts-step01.png)
 
 ### 3. Add the code
 
