@@ -1,9 +1,12 @@
 ---
 title: Web Fonts
 category: three
-description: Using your knowledge of type on the Web from last week, now we will expand on that knowledge with Web fonts.
+description: >-
+  Using your knowledge of type on the Web from last week, now we will expand on
+  that knowledge with Web fonts.
 graded: false
 sidebar: This activity is to be completed individually.
+published: true
 ---
 
 This is your opportunity to apply special typefaces that are hosted by
@@ -15,7 +18,7 @@ Google's webfont service
 
 Using the index.html and style.css files in [webfonts.zip]({{ site.github.url }}/assets/webfonts.zip), add some CSS properties to improve the default typography. Consider size, spacing, colour, etc. and create a design that helps improve the communication of the document while looking good as well.
 
-Before you get going, don't forget to to to `Site > New Site` in Dreamweaver to setup the site.
+Before you get going, don't forget to setup the site and open the root folder in Brackets.
 
 ### 2. Add a webfont
 
