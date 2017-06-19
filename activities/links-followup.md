@@ -17,7 +17,7 @@ headaches of path structures.
 Grab the [links-followup.zip]({{ site.github.url }}/assets/links-followup.zip) and let's build the links the easy way using Brackets path finder tools.
 
 If you can't find your assignment, you can [download a
-copy]({{ site.github.url }}/assets/links.pdf) to use for this activity.
+copy]({{ site.github.url }}/assets/links-warmup.pdf) to use for this activity.
 
 
 
