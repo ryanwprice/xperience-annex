@@ -1,13 +1,14 @@
 ---
 title: Save for Web
-graded: y
+graded: 'y'
+published: true
 ---
 
 ## Instructions
 
 Using Photoshop’s `Save for Web` options, save the included illustration, by artist Carla Corrales, and save it as a PNG, JPG, GIF, etc. at various qualities. Assess the image for quality and file size and decide which settings would create the best overall output (remember to find that compromise between quality and file size).
 
-Post the image settings and your justifications for choosing these settings in the discussion post.
+Submit a PDF or Word Doc with your chosen image settings and your justifications for choosing these settings.
 
 If you don’t have Photoshop, you have a couple of options:
 
