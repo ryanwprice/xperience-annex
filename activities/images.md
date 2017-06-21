@@ -1,6 +1,7 @@
 ---
 title: Optimizing Images for the Web
-graded: n
+graded: 'n'
+published: true
 ---
 
 Images need to be saved appropriately for the Web. Details such as what image format (jpg, png, gif), image size, image quality, etc. all need to be considered.
@@ -15,13 +16,13 @@ Before you can Save for Web in Photoshop, you need to get your image ready. Make
 
 Choose `File > Save for Web` or the super-simple-and-totally-easy-to-remember shortcut `Command + Option + Shift + S` and switch the Original view to 2-Up or 4-Up so you can compare image format and compression options
 
-[![](/images/save4web01.jpg)](/images/save4web01.jpg)
+[![]({{site.github.url}}/images/save4web01.jpg)]({{site.github.url}}/images/save4web01.jpg)
 
 Select a Slice (one of the versions of your image) and apply a preset from the right side of the dialog box. Presets select a file format, compression algorithm, colors, etc. as a starting point for you to tweak and adjust.
 
 Try adjusting the file format, compression quality, etc. and compare against other slices until you find the best overall compromise of image quality vs file size.
 
-[![](/images/save4web02.jpg)](/images/save4web02.jpg)
+[![]({{site.github.url}}/images/save4web02.jpg)]({{site.github.url}}/images/save4web02.jpg)
 
 Once you've found the imperfect balance between size and quality, you can actually click `Save`. The best part about Save for Web is that you can keep your source files (PSDs, etc.) in one folder, and save them all to your Images folder and Photoshop never forgets where you want to save to!
 
