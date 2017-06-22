@@ -1,10 +1,11 @@
 ---
 title: Week 06
-module: Colour, Images, & More!
+module: 'Colour, Images, & More!'
 categories: lessons
 duedate: June 23
 weighting: 0
 layout: lesson
+published: true
 ---
 
 ## Learning Objectives
@@ -44,8 +45,9 @@ In Module 5 we learned how to link pages together. These pages are full of conte
 
 ## Activities
 
-- [“Optimizing Images for the Web” tutorial]({{ site.github.url }}/activities/images)
-- [“Images, Video & Sound, Oh My!” activity]({{ site.github.url }}/activities/oh-my)
+- [Optimizing Images for the Web tutorial]({{ site.github.url }}/activities/images)
+- [Audio & Video tutorial]({{site.github.url}}/activities/audio-video)
+- [Images, Video & Sound, Oh My! activity]({{ site.github.url }}/activities/oh-my)
 
 ## Resources
 
@@ -58,6 +60,3 @@ In Module 5 we learned how to link pages together. These pages are full of conte
 ## Assignments / Assessments
 
 - [“Save for Web” assignment]({{ site.github.url }}/activities/save-for-web)
-
-                                                        
-
