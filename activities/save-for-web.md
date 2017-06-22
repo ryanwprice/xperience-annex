@@ -17,4 +17,6 @@ If you don’t have Photoshop, you have a couple of options:
 
 If you need any help with software, get in touch!
 
+![Save for Web assignment]({{site.baseurl}}/activities/save-for-web-asgt.jpg)
+
 Image: [Carla Corrales](https://dribbble.com/kaluci)
