@@ -1,6 +1,7 @@
 ---
 title: Layout Concepts
-graded: n
+graded: 'n'
+published: true
 ---
 
 There are all kinds of tools at our disposal to take our headings,
@@ -9,7 +10,7 @@ print layout programs like InDesign.
 
 ## To the left
 
-To start, download the [layout-concepts.zip](/assets/layout-concepts.zip)
+To start, download the [layout-concepts.zip]({{ site.github.url }}/assets/layout-concepts.zip)
 file and manage the site in Dreamweaver.
 
 There are six mini activities to work through.
@@ -33,7 +34,7 @@ percentages for the paragraphs.
       margin:0; 
     }
 
-![](/images/concepts-box01.jpg)
+![]({{ site.github.url }}/images/concepts-box01.jpg)
 
 Notice how the text in the second paragraph takes up more space then the
 size of the box we created?
@@ -48,7 +49,7 @@ With a little bit of CSS, we can fix that.
       overflow:scroll;
     }
 
-[![](/images/concepts-box02.jpg)](images/concepts-box02.jpg)
+[![]({{ site.github.url }}/images/concepts-box02.jpg)](images/concepts-box02.jpg)
 
 Left: `overflow:hidden`, Right: `overflow:scroll`
 
@@ -67,7 +68,7 @@ some code:
 
 And here is the output in the browser.
 
-[![](/images/concepts-borders.jpg)](images/concepts-borders.jpg)
+[![]({{ site.github.url }}/images/concepts-borders.jpg)](images/concepts-borders.jpg)
 
 We can change the style of the border (dotted, dashed, etc.), the
 colour, and we can even target just one side at a time if we wanna get
@@ -89,7 +90,7 @@ Typically, inline elements sit inside a block element (ex: `<strong>`,
 
 ### Browser
 
-![](/images/concepts-inline.jpg)
+![]({{ site.github.url }}/images/concepts-inline.jpg)
 
 The code above displays like this in the browser.
 
@@ -104,7 +105,7 @@ These are block elements. ex: `<p> <h1> <ul> <li>` etc.
 
 ### Browser
 
-![](/images/concepts-block.jpg)
+![]({{ site.github.url }}/images/concepts-block.jpg)
 
 The code above displays like this in the browser.
 
@@ -132,7 +133,7 @@ parts
 
 ### Browser
 
-![](/images/concepts-boxmodel.jpg)
+![]({{ site.github.url }}/images/concepts-boxmodel.jpg)
 
 Each paragraph occupies 166px of width (margin left & right, padding
 left & right, border left & right, and width).
@@ -151,7 +152,7 @@ Floats let us do just as the suggest, float items left and right.
       background-color: yellow;
     }
 
-[![](/images/concepts-floats.jpg)](/images/concepts-floats.jpg)
+[![]({{ site.github.url }}/images/concepts-floats.jpg)]({{ site.github.url }}/images/concepts-floats.jpg)
 
 The `float` property allows our 180-pixel-wide paragraphs to float to
 the left of the one before. Try resizing the browser; as it gets
@@ -183,11 +184,11 @@ If we add in some CSS, we can see how the image floats within the text.
 Try resizing the browser and see how the text wraps around the image,
 just like a text wrap in InDesign.
 
-[![](/images/concepts-images01.jpg)](/images/concepts-images01.jpg)
+[![]({{ site.github.url }}/images/concepts-images01.jpg)]({{ site.github.url }}/images/concepts-images01.jpg)
 
 Now try changing the `float` from left to right.
 
-[![](/images/concepts-images02.jpg)](/images/concepts-images02.jpg)
+[![]({{ site.github.url }}/images/concepts-images02.jpg)]({{ site.github.url }}/images/concepts-images02.jpg)
 
 Now let's take out that img tag and move it into a `figure`.
 
@@ -205,7 +206,7 @@ tag acts like a group container for the `img` and `figcaption`
       width:400px;
     }
 
-[![](/images/concepts-images03.jpg)](/images/concepts-images03.jpg)
+[![]({{ site.github.url }}/images/concepts-images03.jpg)]({{ site.github.url }}/images/concepts-images03.jpg)
 
 Now, let's remove the figure all together—but with CSS!
 
@@ -224,7 +225,7 @@ figure.
     <img src="images/thumb02.jpg" />
     <img src="images/thumb03.jpg" />
 
-[![](/images/concepts-images04.jpg)](/images/concepts-images04.jpg)
+[![]({{ site.github.url }}/images/concepts-images04.jpg)]({{ site.github.url }}/images/concepts-images04.jpg)
 
 Nothin' fancy, so let's keep going!
 
@@ -241,7 +242,7 @@ any element floated to the right. To finish it off, we put 10px of
 margin on the bottom and right of each image to add a bit of breathing
 room.
 
-[![](/images/concepts-images05.jpg)](/images/concepts-images05.jpg)
+[![]({{ site.github.url }}/images/concepts-images05.jpg)]({{ site.github.url }}/images/concepts-images05.jpg)
 
 Just a tiny bit of code can go a long way!
 
@@ -250,7 +251,7 @@ Just a tiny bit of code can go a long way!
 Our HTML file already has some CSS in it to create four boxes, each
 100px square.
 
-[![](/images/concepts-positioning01.jpg)](/images/concepts-positioning01.jpg)
+[![]({{ site.github.url }}/images/concepts-positioning01.jpg)]({{ site.github.url }}/images/concepts-positioning01.jpg)
 
 Little boxes made of ticky-tacky.
 
@@ -285,7 +286,7 @@ and give them coordinates.
       left: 55px;
     }
 
-[![](/images/concepts-positioning02.jpg)](/images/concepts-positioning02.jpg)
+[![]({{ site.github.url }}/images/concepts-positioning02.jpg)]({{ site.github.url }}/images/concepts-positioning02.jpg)
 
 Try resizing the browser. No matter what size the window is, the boxes
 sit exactly where we told them to.
@@ -303,7 +304,7 @@ CSS.
       z-index: 1;
     }
 
-[![](/images/concepts-positioning03.jpg)](/images/concepts-positioning03.jpg)
+[![]({{ site.github.url }}/images/concepts-positioning03.jpg)]({{ site.github.url }}/images/concepts-positioning03.jpg)
 
 Just like layers in Photoshop, we can move items up and down and control
 overlap.
