@@ -5,6 +5,7 @@ categories: lessons
 duedate: July 21
 weighting: 0
 layout: lesson
+published: true
 ---
 
 ## Learning Objectives
@@ -59,6 +60,4 @@ TBD
 
 ## Assignments / Assessments
 
-- _None._
-                                                        
-
+- Web page upload
