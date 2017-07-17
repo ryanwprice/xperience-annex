@@ -50,7 +50,7 @@ TBD
 
 ### Activities
 
-- “Understanding usability” quiz
+- Site Navigation
 - Web Site assignment introduction
 
 ## Resources
