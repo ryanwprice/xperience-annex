@@ -42,7 +42,7 @@ In Module 9 we learned basic Web page terminology and aspects of how to make a s
 
 ### Activities
 
-- Site Navigation
+- [Site Navigation]({{ site.github.url }}/activities/navigation)
 - Web Site assignment introduction
 
 ## Resources
