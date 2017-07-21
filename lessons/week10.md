@@ -52,4 +52,4 @@ In Module 9 we learned basic Web page terminology and aspects of how to make a s
 
 ## Assignments / Assessments
 
-- Web page upload
+- [Web page upload]({{ site.github.url }}/activities/upload)
