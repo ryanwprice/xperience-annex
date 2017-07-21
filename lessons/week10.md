@@ -40,14 +40,6 @@ In Module 9 we learned basic Web page terminology and aspects of how to make a s
 - [The Floppy Disk means Save, and 14 other old people Icons that don’t make sense anymore](http://www.hanselman.com/blog/TheFloppyDiskMeansSaveAnd14OtherOldPeopleIconsThatDontMakeSenseAnymore.aspx)
 - [Don Norman: 3 ways good design makes you happy](http://www.ted.com/talks/don_norman_on_design_and_emotion?language=en)
 
-### Instructor Presentation
-
-- _“Week Ten Lecture”_ video available
-
-### Live Session
-
-TBD
-
 ### Activities
 
 - Site Navigation
