@@ -39,6 +39,7 @@ In Module 9 we learned basic Web page terminology and aspects of how to make a s
 - [Don’t Make Me Think](https://www.sensible.com/downloads/DMMT-Revisited-sample-chapter.pdf)
 - [The Floppy Disk means Save, and 14 other old people Icons that don’t make sense anymore](http://www.hanselman.com/blog/TheFloppyDiskMeansSaveAnd14OtherOldPeopleIconsThatDontMakeSenseAnymore.aspx)
 - [Don Norman: 3 ways good design makes you happy](http://www.ted.com/talks/don_norman_on_design_and_emotion?language=en)
+- [CSS Navigation Bar](https://www.w3schools.com/css/css_navbar.asp)
 
 ### Activities
 
